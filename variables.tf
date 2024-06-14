@@ -57,3 +57,20 @@ variable "database_subnet_cidr" {
 variable "nat_gateway_tags" {
   default = {}
 }
+
+variable "is_peering_required" {
+  type = bool
+  default = true
+}
+
+variable "default_vpc_id" {
+  default = ""
+}
+
+variable "default_route_table" {
+  default = ""
+}
+
+variable "default_cidr_block" {
+  default = ""
+}
